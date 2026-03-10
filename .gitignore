@@ -1,0 +1,25 @@
+# Virtual Environment (SANGAT WAJIB - karena ukurannya bergiga-giga)
+venv/
+env/
+ENV/
+
+# Python Cache (file sampah hasil eksekusi python)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment Variables (berisi API Key atau data rahasia)
+.env
+.env.local
+
+# Hasil Training yang besar (Opsional)
+# Kalau kamu mau hosting yang melakukan training sendiri, masukkan data.pth ke sini.
+# Tapi kalau kamu mau pakai otak yang sudah jadi di laptop, hapus baris di bawah ini.
+# data.pth
+
+# File log atau temporary
+*.log
+.vscode/
+.idea/
+.DS_Store

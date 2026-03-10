@@ -1,0 +1,455 @@
+{
+  "intents": [
+    {
+      "tag": "salam",
+      "patterns": ["Halo", "Hai", "Pagi", "Selamat siang", "Halo bot"],
+      "responses": ["Halo! Ada yang bisa saya bantu?", "Hai juga! Senang bertemu Anda.", "Halo, saya asisten virtual Anda."]
+    },
+    {
+      "tag": "tanya_kabar",
+      "patterns": ["Apa kabar?", "Gimana kabarmu?", "Sehat?", "Kamu oke?"],
+      "responses": ["Saya baik, terima kasih! Bagaimana dengan Anda?", "Selalu siap membantu!", "Saya hanyalah kode, tapi saya merasa luar biasa!"]
+    },
+    {
+      "tag": "perpisahan",
+      "patterns": ["Dah", "Sampai jumpa", "Keluar", "Bye", "Dadah"],
+      "responses": ["Sampai jumpa lagi!", "Semoga harimu menyenangkan.", "Senang berbicara denganmu!"]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": ["Terima kasih", "Thanks", "Makasih ya", "Thank you"],
+      "responses": ["Sama-sama!", "Dengan senang hati.", "Apapun untukmu!"]
+    },
+    {
+      "tag": "tanya_nama",
+      "patterns": ["Siapa namamu?", "Nama kamu siapa?", "Boleh tahu namamu?"],
+      "responses": ["Saya adalah Asisten Virtual.", "Namaku Asisten Virtual, senang bertemu denganmu!", "Kamu bisa memanggilku Asisten Virtual."]
+    },
+    {
+      "tag": "tanya_pacarRafi",
+      "patterns": ["Siapa pacar Rafi?", "Rafi punya pacar?", "Pacar Rafi siapa?"],
+      "responses": ["Rafi belum memiliki pacar, tetapi memiliki crush di teknik biomedis UGM bernama Rai", "Tidak ada, adanya crush di teknik biomedis UGM berinisial R", "Hanya ada crush, bukan pacar, di teknik biomedis UGM dengan inisial R"]
+    },
+
+    {
+      "tag": "identitas_user",
+      "patterns": [
+        "Siapa Aqila?",
+        "Ceritakan tentang Aqila",
+        "Siapa Aqila Kresna Arrafi?",
+        "Apa yang kamu tahu tentang Aqila?",
+        "Profil Aqila"
+      ],
+      "responses": [
+        "Aqila adalah seorang mahasiswa Teknik Elektro yang sangat tertarik pada teknologi dan rekayasa sistem.",
+        "Aqila adalah mahasiswa yang memiliki minat besar pada AI, IoT, dan berbagai bidang engineering.",
+        "Aqila dikenal sebagai pembelajar yang suka mengeksplorasi teknologi kompleks."
+      ]
+    },
+    {
+      "tag": "jurusan_kuliah",
+      "patterns": [
+        "Jurusan Aqila apa?",
+        "Aqila kuliah di jurusan apa?",
+        "Bidang studi Aqila",
+        "Aqila belajar apa di kampus?",
+        "Aqila mahasiswa apa?"
+      ],
+      "responses": [
+        "Aqila adalah mahasiswa Teknik Elektro.",
+        "Aqila sedang belajar di bidang Electrical Engineering.",
+        "Bidang studi Aqila berfokus pada teknologi dan sistem elektronik."
+      ]
+    },
+    {
+      "tag": "minat_teknologi",
+      "patterns": [
+        "Apa minat teknologi Aqila?",
+        "Aqila tertarik pada bidang apa?",
+        "Teknologi apa yang Aqila suka?",
+        "Bidang engineering favorit Aqila",
+        "Apa yang ingin dipelajari Aqila?"
+      ],
+      "responses": [
+        "Aqila tertarik pada banyak bidang seperti AI, IoT, Machine Learning, dan Embedded Systems.",
+        "Minat Aqila mencakup berbagai bidang teknologi modern dan sistem engineering.",
+        "Aqila suka mengeksplorasi teknologi kompleks dan sistem terintegrasi."
+      ]
+    },
+    {
+      "tag": "minat_ai",
+      "patterns": [
+        "Apakah Aqila tertarik AI?",
+        "Aqila belajar machine learning?",
+        "Aqila suka artificial intelligence?",
+        "Aqila tertarik neural network?",
+        "Apakah Aqila belajar AI?"
+      ],
+      "responses": [
+        "Ya, Aqila sangat tertarik dengan Artificial Intelligence dan Machine Learning.",
+        "Aqila sering mempelajari AI dan cara mengintegrasikannya dengan sistem lain.",
+        "AI adalah salah satu bidang teknologi yang sangat menarik bagi Aqila."
+      ]
+    },
+    {
+      "tag": "minat_iot",
+      "patterns": [
+        "Apakah Aqila suka IoT?",
+        "Aqila belajar Internet of Things?",
+        "Apakah Aqila tertarik sistem IoT?",
+        "Aqila membuat sistem IoT?",
+        "IoT termasuk minat Aqila?"
+      ],
+      "responses": [
+        "Ya, Aqila tertarik pada sistem IoT dan integrasinya dengan web dan AI.",
+        "IoT adalah salah satu bidang yang sering dipelajari oleh Aqila.",
+        "Aqila suka mempelajari bagaimana perangkat fisik bisa terhubung ke internet."
+      ]
+    },
+    {
+      "tag": "minat_blockchain",
+      "patterns": [
+        "Apakah Aqila tertarik blockchain?",
+        "Aqila belajar web3?",
+        "Aqila suka teknologi blockchain?",
+        "Apakah Aqila mempelajari crypto teknologi?",
+        "Aqila tertarik web3?"
+      ],
+      "responses": [
+        "Aqila juga tertarik mempelajari blockchain dan Web3.",
+        "Teknologi blockchain termasuk salah satu hal yang sedang dipelajari oleh Aqila.",
+        "Aqila ingin memahami bagaimana blockchain dapat digunakan dalam sistem nyata."
+      ]
+    },
+    {
+      "tag": "minat_embedded",
+      "patterns": [
+        "Apakah Aqila suka embedded systems?",
+        "Aqila belajar microcontroller?",
+        "Apakah Aqila tertarik embedded programming?",
+        "Aqila belajar hardware programming?",
+        "Aqila tertarik sistem embedded?"
+      ],
+      "responses": [
+        "Ya, Aqila tertarik pada embedded systems dan microcontroller.",
+        "Embedded programming adalah salah satu bidang yang menarik bagi Aqila.",
+        "Aqila suka mempelajari bagaimana software berinteraksi langsung dengan hardware."
+      ]
+    },
+    {
+      "tag": "cara_berpikir",
+      "patterns": [
+        "Bagaimana cara berpikir Aqila?",
+        "Apa karakter belajar Aqila?",
+        "Bagaimana gaya belajar Aqila?",
+        "Apakah Aqila analitis?",
+        "Bagaimana Aqila mempelajari teknologi?"
+      ],
+      "responses": [
+        "Aqila memiliki cara berpikir yang analitis dan sistematis.",
+        "Aqila suka memahami teknologi sampai ke mekanisme yang mendalam.",
+        "Aqila sering bertanya tentang cara integrasi dan implementasi teknologi."
+      ]
+    },
+    {
+      "tag": "hobi_belajar",
+      "patterns": [
+        "Apa yang Aqila suka pelajari?",
+        "Apa hobi Aqila?",
+        "Aqila suka belajar apa?",
+        "Kegiatan belajar Aqila",
+        "Apa yang sering Aqila eksplorasi?"
+      ],
+      "responses": [
+        "Aqila suka mempelajari berbagai bidang teknologi dan engineering.",
+        "Aqila senang mengeksplorasi sistem kompleks dan teknologi baru.",
+        "Belajar dan bereksperimen dengan teknologi adalah salah satu kegiatan favorit Aqila."
+      ]
+    },
+    {
+      "tag": "prestasi_matematika",
+      "patterns": [
+        "Apakah Aqila jago matematika?",
+        "Prestasi Aqila di matematika?",
+        "Aqila pernah menang lomba matematika?",
+        "Apakah Aqila kuat di matematika?",
+        "Bidang olimpiade Aqila?"
+      ],
+      "responses": [
+        "Aqila memiliki banyak prestasi di bidang matematika.",
+        "Matematika adalah salah satu kekuatan akademik Aqila.",
+        "Aqila dikenal cukup kuat dalam bidang matematika."
+      ]
+    },
+    {
+      "tag": "minat_biologi",
+      "patterns": [
+        "Apakah Aqila suka biologi?",
+        "Aqila tertarik bidang kesehatan?",
+        "Aqila belajar biologi?",
+        "Hubungan Aqila dengan biologi?",
+        "Apakah Aqila ingin belajar biologi?"
+      ],
+      "responses": [
+        "Aqila tertarik dengan bidang kesehatan meskipun merasa belum kuat di biologi.",
+        "Biologi penting bagi Aqila karena berkaitan dengan cita-citanya.",
+        "Aqila ingin meningkatkan pemahamannya dalam bidang biologi."
+      ]
+    },
+    {
+      "tag": "minat_riset",
+      "patterns": [
+        "Apakah Aqila suka riset?",
+        "Aqila pernah melakukan eksperimen?",
+        "Apakah Aqila menulis karya ilmiah?",
+        "Aqila pernah penelitian?",
+        "Aqila suka penelitian?"
+      ],
+      "responses": [
+        "Aqila pernah melakukan eksperimen ilmiah dan menulis karya ilmiah.",
+        "Riset dan eksperimen adalah bagian dari pengalaman belajar Aqila.",
+        "Aqila tertarik pada penelitian yang berkaitan dengan teknologi dan sains."
+      ]
+    },
+    {
+      "tag": "eksperimen_kacang_hijau",
+      "patterns": [
+        "Eksperimen Aqila tentang tanaman?",
+        "Penelitian kacang hijau Aqila?",
+        "Apa eksperimen Aqila di sekolah?",
+        "Aqila pernah meneliti tanaman?",
+        "Eksperimen air karbonasi Aqila?"
+      ],
+      "responses": [
+        "Aqila pernah melakukan eksperimen tentang pertumbuhan kacang hijau dengan berbagai jenis air.",
+        "Eksperimen Aqila menunjukkan bahwa air berkarbonasi membuat tanaman tumbuh lebih cepat.",
+        "Penelitian Aqila berkaitan dengan faktor eksternal yang mempengaruhi pertumbuhan tanaman."
+      ]
+    },
+    {
+      "tag": "minat_startup",
+      "patterns": [
+        "Apakah Aqila tertarik startup?",
+        "Aqila ingin membuat startup?",
+        "Aqila suka inovasi teknologi?",
+        "Apakah Aqila membuat solusi teknologi?",
+        "Aqila ingin membuat produk teknologi?"
+      ],
+      "responses": [
+        "Aqila tertarik membuat solusi teknologi yang berdampak pada masyarakat.",
+        "Aqila suka merancang sistem inovatif untuk memecahkan masalah nyata.",
+        "Startup teknologi juga menjadi salah satu hal yang menarik bagi Aqila."
+      ]
+    },
+    {
+      "tag": "lokasi_user",
+      "patterns": [
+        "Aqila tinggal di mana?",
+        "Dimana Aqila berada?",
+        "Lokasi Aqila",
+        "Aqila dari kota mana?",
+        "Tempat tinggal Aqila"
+      ],
+      "responses": [
+        "Aqila berada di Indonesia.",
+        "Aqila tinggal di Indonesia dan sedang menempuh pendidikan di sana.",
+        "Lokasi Aqila berada di wilayah Indonesia."
+      ]
+    },
+    {
+      "tag": "hubungan_dengan_ai",
+      "patterns": [
+        "Bagaimana Aqila menggunakan AI?",
+        "Apa fungsi AI bagi Aqila?",
+        "Apakah Aqila sering bertanya pada AI?",
+        "Bagaimana Aqila berinteraksi dengan AI?",
+        "AI membantu Aqila?"
+      ],
+      "responses": [
+        "Aqila menggunakan AI sebagai partner belajar dan brainstorming teknologi.",
+        "AI membantu Aqila memahami konsep teknis dan sistem kompleks.",
+        "Aqila sering berdiskusi dengan AI untuk mengeksplorasi ide teknologi."
+      ]
+    },
+{
+  "tag": "minat_drone_ai",
+  "patterns": [
+    "Apakah Aqila tertarik drone?",
+    "Aqila belajar drone AI?",
+    "Aqila pernah membahas drone?",
+    "Apakah Aqila tertarik drone dengan AI?",
+    "Drone termasuk minat Aqila?"
+  ],
+  "responses": [
+    "Ya, Aqila tertarik pada penggunaan AI pada drone terutama untuk deteksi geospasial.",
+    "Aqila pernah mempelajari bagaimana AI dapat diintegrasikan dengan drone.",
+    "Drone dengan sistem AI adalah salah satu teknologi yang menarik bagi Aqila."
+  ]
+},
+{
+  "tag": "integrasi_ai_iot",
+  "patterns": [
+    "Aqila pernah membahas AI dan IoT?",
+    "Apakah Aqila tertarik integrasi AI dengan IoT?",
+    "Aqila suka sistem AI IoT?",
+    "Apakah Aqila belajar AI untuk IoT?",
+    "Integrasi AI IoT minat Aqila?"
+  ],
+  "responses": [
+    "Aqila sangat tertarik pada integrasi AI dengan IoT untuk sistem cerdas.",
+    "Salah satu minat Aqila adalah bagaimana AI bisa memproses data IoT secara real time.",
+    "Aqila suka mempelajari sistem yang menggabungkan AI dan perangkat IoT."
+  ]
+},
+{
+  "tag": "minat_cloud",
+  "patterns": [
+    "Apakah Aqila belajar cloud?",
+    "Aqila tertarik cloud computing?",
+    "Cloud termasuk minat Aqila?",
+    "Aqila belajar teknologi cloud?",
+    "Aqila tertarik sistem cloud?"
+  ],
+  "responses": [
+    "Aqila tertarik pada cloud computing untuk mengelola sistem dan data skala besar.",
+    "Cloud engineering termasuk salah satu bidang yang ingin dipelajari Aqila.",
+    "Aqila ingin memahami bagaimana sistem cloud bekerja dalam teknologi modern."
+  ]
+},
+{
+  "tag": "minat_data_engineering",
+  "patterns": [
+    "Apakah Aqila belajar data engineering?",
+    "Aqila tertarik pengolahan data?",
+    "Aqila belajar data pipeline?",
+    "Data engineering minat Aqila?",
+    "Aqila suka analisis data?"
+  ],
+  "responses": [
+    "Aqila tertarik pada data engineering dan pengolahan data dalam sistem teknologi.",
+    "Pengelolaan data skala besar adalah salah satu bidang yang menarik bagi Aqila.",
+    "Aqila ingin memahami bagaimana data diproses dalam sistem teknologi modern."
+  ]
+},
+{
+  "tag": "minat_devops",
+  "patterns": [
+    "Apakah Aqila tertarik DevOps?",
+    "Aqila belajar DevOps?",
+    "DevOps termasuk minat Aqila?",
+    "Aqila ingin belajar deployment sistem?",
+    "Aqila belajar CI CD?"
+  ],
+  "responses": [
+    "DevOps juga termasuk bidang yang ingin dipelajari oleh Aqila.",
+    "Aqila tertarik memahami bagaimana sistem software dikelola dan dideploy.",
+    "Aqila ingin memahami pipeline pengembangan software modern."
+  ]
+},
+{
+  "tag": "minat_rf_telecom",
+  "patterns": [
+    "Apakah Aqila tertarik RF?",
+    "Aqila belajar telekomunikasi?",
+    "Aqila tertarik wireless communication?",
+    "RF engineering minat Aqila?",
+    "Aqila belajar komunikasi nirkabel?"
+  ],
+  "responses": [
+    "Aqila tertarik pada telekomunikasi dan wireless engineering.",
+    "RF dan komunikasi nirkabel termasuk bidang yang ingin dipelajari Aqila.",
+    "Teknologi komunikasi adalah bagian dari minat Aqila di bidang engineering."
+  ]
+},
+{
+  "tag": "minat_control_system",
+  "patterns": [
+    "Apakah Aqila belajar control system?",
+    "Aqila tertarik sistem kontrol?",
+    "Control engineering minat Aqila?",
+    "Aqila belajar kontrol otomatis?",
+    "Aqila tertarik automation?"
+  ],
+  "responses": [
+    "Aqila tertarik pada control systems dan automation engineering.",
+    "Sistem kontrol adalah bagian penting dari bidang teknik elektro yang dipelajari Aqila.",
+    "Aqila ingin memahami bagaimana sistem otomatis bekerja."
+  ]
+},
+{
+  "tag": "minat_power_system",
+  "patterns": [
+    "Apakah Aqila tertarik power system?",
+    "Aqila belajar sistem tenaga listrik?",
+    "Power engineering minat Aqila?",
+    "Aqila belajar listrik tenaga?",
+    "Aqila tertarik power grid?"
+  ],
+  "responses": [
+    "Power systems termasuk salah satu bidang dalam teknik elektro yang dipelajari Aqila.",
+    "Aqila tertarik memahami sistem tenaga listrik dan infrastrukturnya.",
+    "Sistem energi adalah bagian dari bidang yang dipelajari Aqila."
+  ]
+},
+{
+  "tag": "gaya_belajar_aqila",
+  "patterns": [
+    "Bagaimana Aqila belajar?",
+    "Gaya belajar Aqila seperti apa?",
+    "Apakah Aqila suka belajar mandiri?",
+    "Aqila belajar teknologi bagaimana?",
+    "Cara Aqila memahami teknologi?"
+  ],
+  "responses": [
+    "Aqila memiliki gaya belajar eksploratif dan analitis.",
+    "Aqila suka mempelajari konsep hingga ke implementasi teknis.",
+    "Aqila sering belajar dengan menggabungkan teori dan praktik."
+  ]
+},
+{
+  "tag": "ambisi_teknologi",
+  "patterns": [
+    "Apa tujuan teknologi Aqila?",
+    "Apa ambisi Aqila di teknologi?",
+    "Apa yang ingin dicapai Aqila?",
+    "Cita cita Aqila di teknologi?",
+    "Impian Aqila dalam engineering?"
+  ],
+  "responses": [
+    "Aqila ingin menguasai berbagai bidang teknologi dan engineering.",
+    "Tujuan Aqila adalah memahami dan membangun sistem teknologi yang kompleks.",
+    "Aqila ingin mengembangkan teknologi yang bermanfaat bagi masyarakat."
+  ]
+},
+{
+  "tag": "ketertarikan_sistem_terintegrasi",
+  "patterns": [
+    "Apakah Aqila suka sistem terintegrasi?",
+    "Aqila suka teknologi gabungan?",
+    "Aqila suka menggabungkan banyak teknologi?",
+    "Aqila tertarik sistem kompleks?",
+    "Aqila suka integrasi sistem?"
+  ],
+  "responses": [
+    "Aqila sangat tertarik pada sistem teknologi yang terintegrasi.",
+    "Menggabungkan berbagai teknologi menjadi satu sistem adalah hal yang menarik bagi Aqila.",
+    "Aqila suka mempelajari bagaimana berbagai teknologi dapat bekerja bersama."
+  ]
+},
+{
+  "tag": "minat_keamanan_masyarakat",
+  "patterns": [
+    "Apakah Aqila tertarik keamanan masyarakat?",
+    "Aqila pernah membuat ide keamanan?",
+    "Aqila pernah membuat konsep CCTV AI?",
+    "Aqila tertarik teknologi keamanan?",
+    "Apakah Aqila pernah membuat ide AI CCTV?"
+  ],
+  "responses": [
+    "Aqila pernah mengembangkan ide CCTV berbasis AI untuk mendeteksi tindakan pelecehan.",
+    "Aqila tertarik menggunakan teknologi untuk meningkatkan keamanan masyarakat.",
+    "Salah satu ide Aqila adalah sistem pengawasan berbasis AI dan aplikasi."
+  ]
+  }
+  ]
+}      
